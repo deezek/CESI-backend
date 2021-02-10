@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/citoyens",
+      "handler": "citoyen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/citoyens/count",
+      "handler": "citoyen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/citoyens/:id",
+      "handler": "citoyen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/citoyens",
+      "handler": "citoyen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/citoyens/:id",
+      "handler": "citoyen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/citoyens/:id",
+      "handler": "citoyen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

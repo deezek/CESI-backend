@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citoyens",
+  "info": {
+    "name": "Citoyen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "motDePasse": {
+      "type": "password"
+    },
+    "email": {
+      "type": "email"
+    },
+    "blocked": {
+      "type": "boolean"
+    },
+    "confirmed": {
+      "type": "boolean"
+    },
+    "citoyens": {
+      "collection": "citoyen"
+    },
+    "ressources": {
+      "collection": "ressource"
+    },
+    "commentaires": {
+      "collection": "commentaire"
+    },
+    "moderateur": {
+      "type": "boolean"
+    }
+  }
+}

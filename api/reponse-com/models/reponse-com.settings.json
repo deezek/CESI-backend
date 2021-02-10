@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reponse_coms",
+  "info": {
+    "name": "reponseCom"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "com": {
+      "type": "richtext"
+    },
+    "citoyen": {
+      "model": "citoyen"
+    },
+    "commentaire": {
+      "model": "commentaire"
+    }
+  }
+}

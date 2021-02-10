@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commentaires",
+  "info": {
+    "name": "Commentaire",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "com": {
+      "type": "richtext"
+    },
+    "citoyen": {
+      "model": "citoyen"
+    },
+    "ressource": {
+      "model": "ressource"
+    }
+  }
+}

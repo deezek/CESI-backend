@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ressources",
+  "info": {
+    "name": "Ressource",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fichier": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "public": {
+      "type": "boolean"
+    }
+  }
+}

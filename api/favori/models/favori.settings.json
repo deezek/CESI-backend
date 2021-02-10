@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favoris",
+  "info": {
+    "name": "Favori"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "citoyen": {
+      "model": "citoyen"
+    },
+    "ressources": {
+      "collection": "ressource"
+    }
+  }
+}
