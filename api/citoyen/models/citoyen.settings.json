@@ -18,7 +18,7 @@
       "type": "string"
     },
     "motDePasse": {
-      "type": "password"
+      "type": "password" 
     },
     "email": {
       "type": "email"
