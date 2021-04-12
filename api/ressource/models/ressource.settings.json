@@ -22,10 +22,10 @@
       "plugin": "upload",
       "required": false
     },
-    "public": {
-      "type": "boolean"
-    },
     "categorie": {
+      "type": "string"
+    },
+    "diffusion": {
       "type": "string"
     }
   }
