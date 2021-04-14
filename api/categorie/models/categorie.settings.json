@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ressources",
+  "collectionName": "categories",
   "info": {
-    "name": "Ressource",
+    "name": "Categorie",
     "description": ""
   },
   "options": {
@@ -11,7 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "fichier": {
+    "categorieName": {
+      "type": "string"
+    },
+    "ressources": {
+      "collection": "ressource"
+    },
+    "image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -21,21 +27,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "diffusion": {
-      "type": "string"
-    },
-    "titre": {
-      "type": "string"
-    },
-    "commentaire": {
-      "type": "richtext"
-    },
-    "citoyen": {
-      "model": "citoyen"
-    },
-    "categorie": {
-      "model": "categorie"
     }
   }
 }
